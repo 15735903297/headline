@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.main {
+    width: 100%;
+    height: 0.88rem;
+    background: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.top_menu {
+    width: 100%;
+    height: 0.74rem;
+    background: #f4f5f6;
+    overflow: auto;
+    position: fixed;
+    top: 0.88rem;
+    left: 0;
+    z-index: 99;
+}
+/*.top_menu .list{*/
+    /*width: 100%;*/
+    /*color: white;*/
+/*}*/
+.body{
+    margin-top: 1.62rem;
+}
+.list_content_one {
+    width: 6.904rem;
+    height: 2.117rem;
+    background: #fff;
+    padding: 0.32rem 0 0.32rem 0;
+    margin: 0 0.3rem 0 0.3rem;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+
+}
+
+.message_left {
+    width: 1.08rem;
+    height: 0.50rem;
+    /*background: yellow;*/
+}
+
+.message_left a {
+    position: relative;
+}
+
+.message_left a .iconfont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.5rem;
+    color: #fff;
+}
+
+.message_mid {
+    width: 2.16rem;
+    height: 0.88rem;
+    /*background: green;*/
+}
+
+.today_title {
+    width: 1.66rem;
+    height: 0.88rem;
+    font-size: 18px;
+    font-family: 'STHeiti', 'Microsoft YaHei', 'Helvetica', 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    float: left;
+}
+
+.refresh {
+    display: block;
+    width: 0.5rem;
+    height: 0.88rem;
+    float: right;
+    line-height: 0.88rem;
+}
+
+.refresh .iconfont {
+    display: block;
+    font-size: 0.5rem;
+    color: #fff;
+}
+
+.message_right {
+    width: 0.72rem;
+    height: 0.48rem;
+    /*background: blue;*/
+}
+
+.message_right .iconfont {
+    display: block;
+    font-size: 0.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.plus {
+    width: 0.8rem;
+    height: 0.72rem;
+    background: rgba(221, 221, 221, 1);;
+    color: red;
+    font-size: 0.7rem;
+    position: fixed;
+    top: 0.88rem;
+    right: 0;
+    text-align: center;
+    line-height: 0.72rem;
+    z-index: 999;
+}
+.plus i{
+    display: block;
+    font-size: 0.34rem;
+    text-align: center;
+    line-height: 0.72rem;
+}
+
+.list {
+    width: 15rem;
+    height: 0.72rem;
+
+    /*background: yellow;*/
+
+}
+
+.list li {
+    width: 1.08rem;
+    height: 0.52rem;
+    font-size: 0.34rem;
+    padding: 0 0.2rem 0 0.2rem;
+    margin: 0.1rem 0 0.1rem 0.1rem;
+    float: left;
+    color: white;
+}
+.list li a{
+    color: rgb(80, 80, 80);
+}
+.text_content {
+    width: 4.625rem;
+    height: 100%;
+    /*background: #5bc0de;*/
+    /*margin-right: 0.24rem;*/
+    float: left;
+}
+
+.text_content p {
+    font-size: 0.34rem;
+    color: #aaaaaa;
+}
+
+.top {
+    width: 4.625rem;
+    height: 0.26rem;
+    /*background: yellow;*/
+    margin-top: 0.12rem;
+}
+
+.img {
+    float: right;
+}
+
+.img img {
+    width: 2.22rem;
+    height: 1.47rem;
+}
+
+.stick_label {
+    display: block;
+    width: 0.48rem;
+    height: 0.24rem;
+    border: 1px solid red;
+    background: #fff;
+    color: red;
+    font-size: 0.18rem;
+    border-radius: 0.04rem;
+    margin-right: 0.1rem;
+    float: left;
+    line-height: 0.24rem;
+    text-align: center;
+}
+
+.src {
+    display: block;
+    color: #999999;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+    float: left;
+}
+
+.cmt {
+    display: block;
+    color: #999999;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+    float: left;
+}
+
+.tim {
+    display: block;
+    color: #999999;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+}
+
+.dotdot {
+    font-size: 0.34rem;
+    color: #aaa;
+}
+
+.list_content_two {
+    width: 6.904rem;
+    height: 2.78925rem;
+    background: #fff;
+    padding: 0.32rem 0 0.32rem 0;
+    margin: 0 0.3rem 0 0.3rem;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+
+}
+
+.list_content_two ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.list_content_two ul li {
+    width: 2.29rem;
+    height: 1.47rem;
+}
+.list_content_two ul li img{
+    width: 2.29rem;
+    height: 1.47rem;
+}
+
+
+
+
+/*back*/
+.back{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.alert {
+    width: 5.4rem;
+    height: 4.5rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom:0;
+    right: 0;
+    margin:auto;
+}
+.close{
+
+    width: 0.4rem;
+    height: 0.4rem;
+    background-size: 0.17rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.close .iconfont{
+    display:block;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+.banner{
+
+    width: 3.30rem;
+    height: 2.42rem;
+    /*background: #5bc0de;*/
+    padding:0.16rem 0 0.16rem 0;
+    margin: 0.2rem 0 0 1.08rem;
+}
+.banner img{
+    width: 3.30rem;
+    height: 2.42rem;
+}
+.alert p{
+    text-align: center;
+    color: #a5a5a5;
+    font-size: 0.34rem;
+    margin-top: 0.06rem;
+
+}
+.download-btn{
+    margin-left: 1.5rem;
+    width: 2.20rem;
+    height: 0.6rem;
+    background: #ff6762;
+    text-align: center;
+    line-height: 0.6rem;
+    margin-top: 0.4rem;
+    border-radius:0.1rem;
+    text-shadow: 0 0.01rem 0.01rem #f0221c;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+
+
+
+/*back*/
+.back{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.alert {
+    width: 5.4rem;
+    height: 4.5rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom:0;
+    right: 0;
+    margin:auto;
+}
+.close{
+
+    width: 0.4rem;
+    height: 0.4rem;
+    background-size: 0.17rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.close .iconfont{
+    display:block;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+.banner{
+
+    width: 3.30rem;
+    height: 2.42rem;
+    /*background: #5bc0de;*/
+    padding:0.16rem 0 0.16rem 0;
+    margin: 0.2rem 0 0 1.08rem;
+}
+.banner img{
+    width: 3.30rem;
+    height: 2.42rem;
+}
+.alert p{
+    text-align: center;
+    color: #a5a5a5;
+    font-size: 0.34rem;
+    margin-top: 0.06rem;
+
+}
+.download-btn{
+    margin-left: 1.5rem;
+    width: 2.20rem;
+    height: 0.6rem;
+    background: #ff6762;
+    text-align: center;
+    line-height: 0.6rem;
+    margin-top: 0.4rem;
+    border-radius:0.1rem;
+    text-shadow: 0 0.01rem 0.01rem #f0221c;
+    color: #fff;
+    font-size: 0.4rem;
+}

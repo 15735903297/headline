@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_791188_uuw0fu0kc6c.css">
+    <link rel="stylesheet" href="/assets/index/css/rem.css">
+    <link rel="stylesheet" href="/assets/index/css/management.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="title">
+    <a href="">频道管理</a>
+    <i class="iconfont icon-fanhui"></i>
+</div>
+<div class="conction">
+    <span class="conction-die">点击删除以下频道</span>
+    <ul id="ul">
+        <?php foreach($category as $k => $v) {?>
+        <li class="<?php echo $v['id'] == $cid?'active':'' ?>">
+            <a href="/index.php?c=page&m=index&cid=<?php echo $v['id'] ?>&page=1">
+                <?php echo $v['name'] ?>
+            </a>
+        </li>
+        <?php } ?>
+    </ul>
+</div>
+<div class="addconction">
+    <span class="addconction-die">点击添加以下频道</span>
+    <ul id="addul">
+        <li><a href="">推荐</a></li>
+        <li><a href="">推荐</a></li>
+        <li><a href="">推荐</a></li>
+        <li><a href="">推荐</a></li>
+        <li><a href="">推荐</a></li>
+    </ul>
+</div>
+</body>
+</html>

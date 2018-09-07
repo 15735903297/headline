@@ -1,0 +1,81 @@
+.box-add{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+.wrap {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #CCFFFF;
+    text-align: center;
+}
+
+.right-part {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    clip: rect(0px, auto, auto, 100px)
+}
+
+.right {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background: #003366;
+    clip: rect(0px, auto, auto, 100px);
+}
+
+.r-shadow {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.left-part {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    clip: rect(0px, 100px, auto, 0px)
+}
+
+.left {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background: #003366;
+    clip: rect(0px, 100px, auto, 0px);
+}
+
+.l-shadow {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#desc {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 28px;
+    position: absolute;
+    left: 0
+}

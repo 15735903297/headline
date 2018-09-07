@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_791188_uuw0fu0kc6c.css">
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/index/css/rem.css">
+    <link rel="stylesheet" href="/assets/index/css/management.css">
+    <title>频道管理</title>
+</head>
+<body>
+    <div class="title">
+        <span>频道管理</span>
+        <a href="/index.php?c=page&m=index"><i class="iconfont icon-fanhui"></i></a>
+    </div>
+    <div class="conction">
+     <span class="conction-die">点击删除以下频道</span>
+        <ul id="ul">
+            <li>推荐</li>
+            <li>视频</li>
+            <li>热点</li>
+            <li>社会</li>
+            <li>娱乐</li>
+            <li>军事</li>
+        </ul>
+    </div>
+    <div class="addconction">
+        <span class="addconction-die">点击添加以下频道</span>
+        <ul id="addul">
+            <li>科技</li>
+            <li>体育</li>
+            <li>财经</li>
+            <li>国际</li>
+            <li>时尚</li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    $(function () {
+        let li = $('#ul li');
+        let ul = $('#ul');
+        let addul = $('#addul');
+        li.click(function () {
+            console.log($(this).text());
+            if ($('ul:contains('<li>+$(this).text()+'</li>)')){
+                addul.append('<li>'+$(this).html()+'</li>');
+                $(this).remove()
+            }
+
+        });
+        let lis = $('#addul li');
+        lis.click(function () {
+            if ($('addul:contains('<li>+$(this).text()+'</li>)')){
+                ul.append('<li>'+$(this).html()+'</li>');
+                $(this).remove()
+            }
+
+        })
+    })
+
+</script>
